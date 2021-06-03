@@ -1,21 +1,17 @@
 Pod::Spec.new do |s|
   s.name         = 'PersonaInquirySDK'
-  s.version      = '0.8.3'
+  s.version      = '1.1.11'
   s.summary      = 'Persona Inquiry iOS SDK'
-  s.homepage     = 'https://github.com/persona-id/inquiry-ios'
+  s.homepage     = 'https://github.com/bowenwp/inquiry-ios'
   s.author       = 'Persona'
   s.license      = { :type => 'Persona License', :file => 'LICENSE' }
   s.platform     = 'ios'
   s.ios.deployment_target = '11.0'
 
-  s.source       = { :http => 'https://github.com/bowenwp/inquiry-ios/releases/download/0.8.3/PersonaSDK.framework.zip' }
-  s.vendored_frameworks = 'Persona.framework'
+  s.source       = { :http => 'https://github.com/bowenwp/inquiry-ios/releases/download/1.1.11/PersonaInquirySDK.zip' }
+  s.vendored_frameworks = 'Persona.xcframework'
 
   # 1.7 is needed for `swift_versions` support
   s.cocoapods_version = '>= 1.7.0.beta.1'
-  s.swift_versions = ['5.0']
-
-  # Dependencies
-  s.dependency 'CocoaLumberjack/Swift', '~> 3.6'
-  s.dependency 'lottie-ios', '~> 3.1.6'
+  s.swift_versions = ['5.1']
 end
